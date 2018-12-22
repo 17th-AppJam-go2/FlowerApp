@@ -57,9 +57,12 @@
                     android:layout_marginRight="10dp"/>
 
             <EditText
+                    android:id="@+id/idEdit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="아이디"
+                    android:textColorHint="#000000"
+                    android:textColor="#000000"
                     android:background="@null"/>
         </LinearLayout>
 
@@ -71,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/person"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/login_id_password">
+                android:background="@drawable/edittext_background">
 
             <ImageView
                     android:layout_width="30dp"
@@ -84,15 +87,19 @@
                     android:layout_marginBottom="10dp"/>
 
             <EditText
+                    android:id="@+id/pwEdit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:hint="비밀번호"
+                    android:textColorHint="#000000"
+                    android:textColor="#000000"
                     android:background="@null"/>
 
         </LinearLayout>
 
         <Button
+                android:id="@+id/logginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="로그인"
@@ -105,16 +112,19 @@
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
                 <TextView
+                        android:id="@+id/findIdText"
                         android:layout_width="wrap_content"
                         android:layout_height="30sp"
                         android:layout_marginLeft="20dp"
                         android:text="아이디 찾기"/>
                 <TextView
+                        android:id="@+id/findPwText"
                         android:layout_width="wrap_content"
                         android:layout_height="30sp"
                         android:layout_marginLeft="20dp"
                         android:text="비밀번호 찾기"/>
                 <TextView
+                        android:id="@+id/registerText"
                         android:layout_width="wrap_content"
                         android:layout_height="30sp"
                         android:layout_marginLeft="20dp"
