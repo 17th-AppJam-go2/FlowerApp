@@ -60,14 +60,14 @@
             android:layout_height="49dp"
             android:background="@drawable/edittext_background"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/appname"
+            android:layout_below="@+id/nameForm"
             android:gravity="center_vertical"
-            android:layout_marginTop="64dp">
+            android:layout_marginTop="16dp">
 
         <ImageView
                 android:id="@+id/idIcon"
                 android:layout_width="27dp"
-                android:layout_height="14dp"
+                android:layout_height="27dp"
                 android:src="@drawable/id_icon"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="16dp"/>
@@ -77,11 +77,85 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                android:hint="이름"
+                android:hint="아이디"
                 android:textColorHint="#000000"
                 android:textColor="#000000"/>
     </LinearLayout>
 
+    <LinearLayout
+            android:id="@+id/pwForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/idForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
 
+        <ImageView
+                android:id="@+id/pwIcon"
+                android:layout_width="25dp"
+                android:layout_height="29dp"
+                android:src="@drawable/pw_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/pwEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="비밀번호"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/pwCheckForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pwForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/pwCheckIcon"
+                android:layout_width="25dp"
+                android:layout_height="29dp"
+                android:src="@drawable/pw_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/pwCheckEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="비밀번호 확인"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/registerButton"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/choice_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pwCheckForm"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.2sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="회원가입"/>
+    </LinearLayout>
 
 </RelativeLayout>

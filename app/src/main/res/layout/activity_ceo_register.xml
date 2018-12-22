@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,4 +7,202 @@
         android:layout_height="match_parent"
         tools:context=".activity.CeoRegisterActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24.7sp"
+            android:textColor="#000000"
+            android:layout_marginTop="71dp"
+            android:layout_marginStart="40dp"
+            android:text="회원가입"/>
+
+    <LinearLayout
+            android:id="@+id/florlistForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerText"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp">
+
+        <ImageView
+                android:id="@+id/florlistNameIcon"
+                android:layout_width="27dp"
+                android:layout_height="14dp"
+                android:src="@drawable/name_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/florlistNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="꽃집 이름"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/idForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/florlistForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/idIcon"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@drawable/id_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/idEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="아이디"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/pwForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/idForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/pwIcon"
+                android:layout_width="25dp"
+                android:layout_height="29dp"
+                android:src="@drawable/pw_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/pwEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="비밀번호"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/pwCheckForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pwForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/pwCheckIcon"
+                android:layout_width="25dp"
+                android:layout_height="29dp"
+                android:src="@drawable/pw_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/pwCheckEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="비밀번호 확인"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/phoneForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pwCheckForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phone_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="꽃집 전화번호"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/addressForm"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/phoneForm"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/addressIcon"
+                android:layout_width="22dp"
+                android:layout_height="28dp"
+                android:src="@drawable/address_icon"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="16dp"/>
+
+        <EditText
+                android:id="@+id/addressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="꽃집 주소"
+                android:textColorHint="#000000"
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/registerButton"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:background="@drawable/choice_background"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/addressForm"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.2sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="회원가입"/>
+    </LinearLayout>
+
+</RelativeLayout>
