@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".fragment.FlowerFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context=".fragment.FlowerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+            android:background="#ffb7b9"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="60dp"
+            android:text="꽃피면"/>
 
-</FrameLayout>
+    <LinearLayout
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!--TODO 아이콘 넣기기-->
+        <ImageView
+                android:src="@drawable/flower_address_icon"
+                android:layout_width="11dp"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_marginStart="3dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="꽃 자판기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+            android:background="#21000000"
+            android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+        <TextView
+                android:id="@+id/tab1"
+                android:textColor="#808080"
+                android:text="서울"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="#21000000"
+                android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/tab2"
+                android:textColor="#808080"
+                android:text="경기"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="#21000000"
+                android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/tab3"
+                android:textColor="#808080"
+                android:text="대전"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <View
+                android:background="#21000000"
+                android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/tab4"
+                android:textColor="#808080"
+                android:text="부산"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+            android:background="#21000000"
+            android:layout_width="match_parent" android:layout_height="1dp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

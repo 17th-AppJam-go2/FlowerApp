@@ -21,8 +21,7 @@ import kotlinx.android.synthetic.main.item_default_recycler.view.*
 class SearchFragment : Fragment() {
 
     lateinit var fragmentView:View
-    var items :MutableList<String> = ArrayList()
-    lateinit var resultItems : List<SearchResult>
+    var items  = ArrayList<String>()
 
     companion object {
         @JvmStatic

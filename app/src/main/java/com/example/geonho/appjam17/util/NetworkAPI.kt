@@ -15,11 +15,12 @@ interface NetworkAPI {
     @POST("auth/signup")
     @FormUrlEncoded
     fun signUp(
+        @Field("type") type:String,
         @Field("id") id: String,
         @Field("password") pw: String,
-        @Field("shopName") shopName: String,
-        @Field("shopNumber") number: String,
-        @Field("address") address: String
+        @Field("shopName") shopName: String="",
+        @Field("shopNumber") number: String="",
+        @Field("shopAddress") address: String=""
     ): Call<ResponseBody>
 
     @GET("shop")

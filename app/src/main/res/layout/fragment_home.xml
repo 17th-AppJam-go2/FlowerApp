@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".fragment.HomeFragment">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+            android:background="#ffb7b9"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="?attr/actionBarSize">
 
-</FrameLayout>
+        <TextView
+                android:text="꽃피면"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ranking_icon"
+                android:layout_width="16dp"
+                android:layout_height="11dp"/>
+
+        <TextView
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="꽃집 RANKING"
+                android:layout_marginStart="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="3dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:layout_height="match_parent"/>
+</LinearLayout>
