@@ -34,7 +34,7 @@
             android:layout_below="@+id/appname"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp">
 
@@ -47,14 +47,20 @@
 
             <ImageView
                     android:layout_width="30dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/id_icon"/>
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/id_icon"
+                    android:layout_marginRight="10dp"/>
 
             <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:hint="아이디"
+                    android:background="@null"/>
         </LinearLayout>
 
 
@@ -64,43 +70,54 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/person"
-                android:layout_marginTop="-20dp">
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_id_password">
 
             <ImageView
-                    android:layout_width="27dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/pw_icon"/>
+                    android:src="@drawable/pw_icon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
 
             <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:hint="비밀번호"
+                    android:background="@null"/>
 
         </LinearLayout>
 
         <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="로그인"/>
+                android:text="로그인"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login_button"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
                 <TextView
-                        android:layout_width="70sp"
+                        android:layout_width="wrap_content"
                         android:layout_height="30sp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:text="아이디 찾기"/>
                 <TextView
-                        android:layout_width="90sp"
+                        android:layout_width="wrap_content"
                         android:layout_height="30sp"
                         android:layout_marginLeft="20dp"
                         android:text="비밀번호 찾기"/>
                 <TextView
-                        android:layout_width="20sp"
+                        android:layout_width="wrap_content"
                         android:layout_height="30sp"
+                        android:layout_marginLeft="20dp"
                         android:text="회원가입"/>
 
         </LinearLayout>
