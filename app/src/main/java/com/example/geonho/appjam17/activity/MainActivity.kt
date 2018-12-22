@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        StatusBarUtil.setStatusBarColoc(window, Color.WHITE)
+        StatusBarUtil.setStatusBarColor(window, Color.WHITE)
         setContentView(R.layout.activity_main)
         init()
     }

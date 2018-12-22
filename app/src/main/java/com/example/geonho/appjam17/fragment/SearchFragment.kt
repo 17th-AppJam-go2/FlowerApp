@@ -1,9 +1,5 @@
 package com.example.geonho.appjam17.fragment
 
-import android.app.Activity
-import android.content.Context
-import android.content.SharedPreferences
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -37,11 +33,15 @@ class SearchFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         fragmentView =  inflater.inflate(R.layout.fragment_search, container, false)
 
+        return fragmentView
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
         items.addAll(SharedPreferenceUtil.getList(context!!,"item"))
         initRecyclerView()
         setListeners()
-
-        return fragmentView
     }
 
     private fun setListeners(){

@@ -7,7 +7,7 @@ import android.view.Window
 import android.view.WindowManager
 
 object StatusBarUtil {
-    fun setStatusBarColoc(window: Window, color: Int) {
+    fun setStatusBarColor(window: Window, color: Int) {
         window.run {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)

@@ -12,7 +12,7 @@ class RegisterChoiceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        StatusBarUtil.setStatusBarColoc(window, Color.WHITE)
+        StatusBarUtil.setStatusBarColor(window, Color.WHITE)
         setContentView(R.layout.activity_choice_register)
 
         userButton.setOnClickListener {
