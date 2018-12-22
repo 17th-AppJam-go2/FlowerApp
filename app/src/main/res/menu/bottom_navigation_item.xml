@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/bottomOne"
+            android:enabled="true"
+            android:title="꽃 자판기"
+            android:icon="@drawable/bottom_one"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/bottomTwo"
+            android:enabled="true"
+            android:title="검색"
+            android:icon="@drawable/bottom_two"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/bottomThree"
+            android:enabled="true"
+            android:title="꽃피면"
+            android:icon="@drawable/bottom_three"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/bottomFour"
+            android:enabled="true"
+            android:title="즐겨찾기"
+            android:icon="@drawable/bottom_four"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/bottomFive"
+            android:enabled="true"
+            android:title="더보기"
+            android:icon="@drawable/bottom_five"
+            app:showAsAction="ifRoom"/>
+
+</menu>
