@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".activity.CeoRegisterActivity">
         </activity>
+        <activity android:name=".activity.HomeDetailActivity">
+        </activity>
     </application>
 
 </manifest>
