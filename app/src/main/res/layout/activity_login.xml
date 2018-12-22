@@ -14,7 +14,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="80dp"
-            android:src="@drawable/splash_logo"/>
+            android:src="@drawable/color_flower_icon"/>
 
     <TextView
             android:id="@+id/appname"
@@ -23,8 +23,9 @@
             android:layout_below="@+id/splashLogo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-5dp"
+            android:textColor="#000000"
             android:text="꽃피면"
-            android:textSize="25dp"/>
+            android:textSize="18sp"/>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +49,7 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/login_person"/>
+                    android:src="@drawable/id_icon"/>
 
             <EditText
                     android:layout_width="match_parent"
@@ -69,7 +70,7 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/login_lock"/>
+                    android:src="@drawable/pw_icon"/>
 
             <EditText
                     android:layout_width="match_parent"

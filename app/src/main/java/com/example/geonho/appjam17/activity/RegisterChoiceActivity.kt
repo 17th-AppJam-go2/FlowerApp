@@ -6,11 +6,11 @@ import android.os.Bundle
 import com.example.geonho.appjam17.R
 import com.example.geonho.appjam17.util.StatusBarUtil
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterChoiceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         StatusBarUtil.setStatusBarColoc(window, Color.WHITE)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_choice_register)
     }
 }
