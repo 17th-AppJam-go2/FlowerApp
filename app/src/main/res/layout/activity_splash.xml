@@ -12,10 +12,9 @@
                 android:layout_width="95dp"
                android:layout_height="72dp"
                android:layout_centerInParent="true"
-               android:src="@drawable/splash_logo"/>
+               android:src="@drawable/color_flower_icon"/>
 
     <TextView
-            android:id="@+id/splashText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18.5sp"

@@ -11,28 +11,25 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
                 android:value="AIzaSyC-15ZG18lmiNpmYeK8kTcmVoG2iMCNZG8"/>
 
-        <activity android:name=".activity.MainActivity"
-                  android:theme="@style/NoTitle"/>
-
         <activity
-                android:name=".activity.SplashActivity"
-                android:theme="@style/NoTitle">
+                android:name=".activity.MainActivity"/>
+        <activity
+                android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".activity.LoginActivity"
-                  android:theme="@style/NoTitle">
+        <activity
+                android:name=".activity.LoginActivity">
         </activity>
-
+        <activity android:name=".activity.RegisterActivity">
+        </activity>
     </application>
 
 </manifest>
